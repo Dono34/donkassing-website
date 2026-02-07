@@ -17,7 +17,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600;1,9..144,700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="/css/style.css">
@@ -58,17 +58,9 @@
 </head>
 <body>
 
-    <!-- Noise overlay -->
-    <svg class="noise-overlay" xmlns="http://www.w3.org/2000/svg">
-        <filter id="noise">
-            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
-        </filter>
-        <rect width="100%" height="100%" filter="url(#noise)"/>
-    </svg>
-
     <!-- Navigation -->
     <nav class="nav">
-        <a href="/" class="nav-logo">Don <span>Kassing</span></a>
+        <a href="/" class="nav-logo">Don Kassing</a>
         <ul class="nav-links">
             <li><a href="/about.html">About</a></li>
             <li><a href="/ventures.html">Ventures</a></li>
@@ -84,17 +76,10 @@
 
     <!-- Hero -->
     <section class="hero">
-        <div class="hero-bg">
-            <div class="hero-gradient"></div>
-            <div class="hero-grid-lines"></div>
-        </div>
         <div class="hero-content">
-            <div class="hero-text">
+            <div>
                 <p class="hero-greeting">Executive Leader &middot; Consultant &middot; Entrepreneur</p>
-                <h1 class="hero-name">
-                    <span class="first-name">Don</span>
-                    <span class="last-name">Kassing</span>
-                </h1>
+                <h1 class="hero-name">Don<br><em>Kassing</em></h1>
                 <p class="hero-tagline" data-text="From Fortune 100 boardrooms to founding three companies. 25+ years turning strategy into results.">
                     From Fortune 100 boardrooms to founding three companies. 25+ years turning strategy into results.
                 </p>
@@ -106,22 +91,15 @@
                     <a href="/contact.html" class="btn btn-outline">Get in Touch</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-image-ring"></div>
-                <div class="hero-image-wrapper">
-                    <img src="/images/headshot.jpg" alt="Don Kassing" width="300" height="300">
-                </div>
+            <div class="hero-image-wrapper">
+                <img src="/images/headshot.jpg" alt="Don Kassing" width="480" height="480">
             </div>
-        </div>
-        <div class="hero-scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
         </div>
     </section>
 
     <!-- Metrics -->
     <section class="metrics section-pad">
-        <div class="section-inner">
+        <div class="container">
             <div class="metrics-grid">
                 <div class="metric-item reveal">
                     <div class="metric-number" data-count="350" data-prefix="$" data-suffix="MM">$0MM</div>
@@ -145,51 +123,45 @@
 
     <!-- Ventures -->
     <section class="ventures section-pad">
-        <div class="section-inner">
+        <div class="container">
             <div class="section-label reveal">Current Ventures</div>
-            <h2 class="section-title reveal">Building businesses that <span class="gradient-text">create value</span></h2>
+            <h2 class="section-title reveal">Building businesses that <em>create value</em></h2>
 
             <div class="ventures-grid">
                 <!-- Aspire2 Consulting -->
                 <div class="venture-card reveal">
-                    <div class="venture-card-content">
-                        <div class="venture-icon">
-                            <img src="/images/aspire2-logo.png" alt="Aspire2 Consulting">
-                        </div>
-                        <h3>Aspire2 Consulting</h3>
-                        <div class="venture-type">Strategic Consulting</div>
-                        <p>Strategic assessment and operational transformation for growth-stage companies.</p>
-                        <span class="venture-status"><span class="dot"></span> Active since 2010</span>
+                    <div class="venture-icon">
+                        <img src="/images/aspire2-logo.png" alt="Aspire2 Consulting">
                     </div>
+                    <h3>Aspire2 Consulting</h3>
+                    <div class="venture-type">Strategic Consulting</div>
+                    <p>Strategic assessment and operational transformation for growth-stage companies.</p>
+                    <span class="venture-status"><span class="dot"></span> Active since 2010</span>
                 </div>
 
                 <!-- aCom Success Partners -->
                 <div class="venture-card reveal reveal-delay-1">
-                    <div class="venture-card-content">
-                        <div class="venture-icon">
-                            <img src="/images/acom-logo.png" alt="aCom Success Partners">
-                        </div>
-                        <h3>aCom Success Partners</h3>
-                        <div class="venture-type">Amazon eCommerce</div>
-                        <p>Full-service Amazon management — from listing optimization to growth strategy for top brands.</p>
-                        <a href="https://acomsuccess.com" target="_blank" rel="noopener" class="venture-link">
-                            Visit Site
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
+                    <div class="venture-icon">
+                        <img src="/images/acom-logo.png" alt="aCom Success Partners">
                     </div>
+                    <h3>aCom Success Partners</h3>
+                    <div class="venture-type">Amazon eCommerce</div>
+                    <p>Full-service Amazon management — from listing optimization to growth strategy for top brands.</p>
+                    <a href="https://acomsuccess.com" target="_blank" rel="noopener" class="venture-link">
+                        Visit Site
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+                    </a>
                 </div>
 
                 <!-- Aspire2 Automate -->
                 <div class="venture-card reveal reveal-delay-2">
-                    <div class="venture-card-content">
-                        <div class="venture-icon">
-                            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--accent-3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.7-2 3.4V11h2a4 4 0 0 1 4 4v1h2v4h-4v-4h2v-1a2 2 0 0 0-2-2h-2v2a4 4 0 0 1-4 4 4 4 0 0 1-4-4v-2H8a2 2 0 0 0-2 2v1h2v4H4v-4h2v-1a4 4 0 0 1 4-4h2V9.4C10.8 8.7 10 7.5 10 6a4 4 0 0 1 2-3.5"/><circle cx="12" cy="6" r="2"/></svg>
-                        </div>
-                        <h3>Aspire2 Automate</h3>
-                        <div class="venture-type">AI & Automation</div>
-                        <p>AI-powered automation for smarter business operations and ecommerce.</p>
-                        <span class="venture-status"><span class="dot"></span> Coming Soon</span>
+                    <div class="venture-icon">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.7-2 3.4V11h2a4 4 0 0 1 4 4v1h2v4h-4v-4h2v-1a2 2 0 0 0-2-2h-2v2a4 4 0 0 1-4 4 4 4 0 0 1-4-4v-2H8a2 2 0 0 0-2 2v1h2v4H4v-4h2v-1a4 4 0 0 1 4-4h2V9.4C10.8 8.7 10 7.5 10 6a4 4 0 0 1 2-3.5"/><circle cx="12" cy="6" r="2"/></svg>
                     </div>
+                    <h3>Aspire2 Automate</h3>
+                    <div class="venture-type">AI & Automation</div>
+                    <p>AI-powered automation for smarter business operations and ecommerce.</p>
+                    <span class="venture-status"><span class="dot"></span> Coming Soon</span>
                 </div>
             </div>
         </div>
@@ -197,9 +169,9 @@
 
     <!-- Career Timeline (Horizontal Scroll) -->
     <section class="timeline section-pad">
-        <div class="section-inner" style="margin-bottom: 2rem;">
+        <div class="container" style="margin-bottom: 2rem;">
             <div class="section-label reveal">Career Arc</div>
-            <h2 class="section-title reveal">From analyst to <span class="gradient-text">CEO</span> — scroll the journey</h2>
+            <h2 class="section-title reveal">From analyst to <em>CEO</em> — scroll the journey</h2>
         </div>
         <div class="timeline-wrapper">
             <div class="timeline-track">
@@ -260,7 +232,7 @@
                     <div class="timeline-desc">$1.3MM Amazon business. 140K+ customers. Top brands including Shark Tank investments.</div>
                 </div>
                 <div class="timeline-item">
-                    <svg class="timeline-logo" style="background: var(--bg-surface); padding: 14px;" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="var(--accent-2)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+                    <svg class="timeline-logo" style="background: var(--cream); padding: 14px;" width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
                     <div class="timeline-year">2025</div>
                     <div class="timeline-role">Founder</div>
                     <div class="timeline-company">Aspire2 Automate</div>
@@ -273,12 +245,12 @@
 
     <!-- Testimonials -->
     <section class="testimonials section-pad">
-        <div class="section-inner">
+        <div class="container">
             <div class="section-label reveal">Client Testimonials</div>
-            <h2 class="section-title reveal">What people say about <span class="gradient-text">working with Don</span></h2>
+            <h2 class="section-title reveal">What people say about <em>working with Don</em></h2>
 
-            <div class="testimonials-track">
-                <div class="testimonial-card">
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
                     <p class="testimonial-text">"I have worked with Don on over half a dozen Amazon projects since 2015, leading my clients and brands to Don's company for services that range from fixing a broken Amazon business to sheer brand presence and growth strategy. I would not work with anyone else for Amazon. Don is extremely reliable and easy to work with. He gets results."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">RC</div>
@@ -288,7 +260,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card reveal reveal-delay-1">
                     <p class="testimonial-text">"This is the 2nd time working with Don. A few adjectives to describe my experience: Quick, effective, beautifully designed, and on point for brand story telling. Don is top-notch to work with. Easy going, responsive, and just an excellent person to work with."</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">C</div>
@@ -298,7 +270,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card reveal reveal-delay-2">
                     <p class="testimonial-text">"Don knows his stuff about Amazon! He was very helpful in educating me on where my PPC was unprofitable. I will definitely use his services in the future. 5 STAR EXPERIENCE!"</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">C</div>
@@ -308,7 +280,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card reveal reveal-delay-3">
                     <p class="testimonial-text">"I worked with Don as my Amazon Coach and it was an awesome experience! He taught me how to create a successful private label and gave me a lot of valuable tips. Don knows his stuff when it comes to Amazon. Thanks to Don's guidance, I was able to avoid some big mistakes. Don is the real deal!"</p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">C</div>
@@ -324,17 +296,17 @@
 
     <!-- CTA -->
     <section class="cta-section section-pad">
-        <div class="section-inner">
+        <div class="container">
             <div class="section-label reveal">Let's Connect</div>
-            <h2 class="section-title reveal">Ready to <span class="gradient-text">build something</span> together?</h2>
+            <h2 class="section-title reveal">Ready to <em>build something</em> together?</h2>
             <p class="cta-description reveal">Strategy, ecommerce, or automation — let's talk.</p>
             <div class="cta-buttons reveal">
                 <a href="/contact.html" class="btn btn-primary">
                     Get in Touch
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </a>
-                <a href="https://www.linkedin.com/in/donkassing" target="_blank" rel="noopener" class="btn btn-outline">
-                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                <a href="https://www.linkedin.com/in/donkassing" target="_blank" rel="noopener" class="btn btn-outline-white">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                     LinkedIn
                 </a>
             </div>
@@ -345,7 +317,7 @@
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                <a href="/" class="nav-logo">Don <span>Kassing</span></a>
+                <a href="/" class="nav-logo">Don Kassing</a>
                 <p>Executive leader and entrepreneur with 25+ years of experience building companies, driving growth, and creating value.</p>
             </div>
             <div class="footer-col">

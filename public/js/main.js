@@ -52,14 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
         heroTl
-            .to('.hero-image', { opacity: 1, duration: 0.8, y: 0 }, 0.2)
+            .to('.hero-image-wrapper', { opacity: 1, duration: 0.8, y: 0 }, 0.2)
             .to('.hero-greeting', { opacity: 1, y: 0, duration: 0.6 }, 0.4)
             .to('.hero-name', { opacity: 1, y: 0, duration: 0.8 }, 0.5)
             .to('.hero-tagline', { opacity: 1, y: 0, duration: 0.6 }, 0.8)
             .to('.hero-ctas', { opacity: 1, y: 0, duration: 0.6 }, 1.0);
 
         // Set initial states
-        gsap.set(['.hero-image', '.hero-greeting', '.hero-name', '.hero-tagline', '.hero-ctas'], {
+        gsap.set(['.hero-image-wrapper', '.hero-greeting', '.hero-name', '.hero-tagline', '.hero-ctas'], {
             y: 30
         });
     }
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const btn = contactForm.querySelector('.btn-primary');
             const originalText = btn.textContent;
             btn.textContent = 'Message Sent!';
-            btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+            btn.style.background = '#10b981';
             setTimeout(() => {
                 btn.textContent = originalText;
                 btn.style.background = '';
