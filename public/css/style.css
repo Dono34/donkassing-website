@@ -13,13 +13,13 @@
     --text-primary: #f1f5f9;
     --text-secondary: #94a3b8;
     --text-muted: #64748b;
-    --accent-1: #6366f1;
-    --accent-2: #8b5cf6;
-    --accent-3: #22d3ee;
+    --accent-1: #d97706;
+    --accent-2: #f59e0b;
+    --accent-3: #fbbf24;
     --gradient: linear-gradient(135deg, var(--accent-1), var(--accent-2));
-    --gradient-subtle: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(139,92,246,0.15));
-    --glow: 0 0 40px rgba(99,102,241,0.3);
-    --glow-sm: 0 0 20px rgba(99,102,241,0.2);
+    --gradient-subtle: linear-gradient(135deg, rgba(217,119,6,0.12), rgba(245,158,11,0.12));
+    --glow: 0 0 40px rgba(245,158,11,0.25);
+    --glow-sm: 0 0 20px rgba(245,158,11,0.15);
     --shadow: 0 4px 24px rgba(0,0,0,0.4);
     --shadow-lg: 0 8px 40px rgba(0,0,0,0.5);
     --radius: 12px;
@@ -98,7 +98,7 @@ img {
 }
 
 .nav-logo {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
@@ -230,7 +230,7 @@ section {
 }
 
 .section-title {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 700;
     line-height: 1.1;
@@ -265,17 +265,17 @@ section {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99,102,241,0.15), transparent),
-        radial-gradient(ellipse 60% 40% at 80% 50%, rgba(139,92,246,0.1), transparent),
-        radial-gradient(ellipse 50% 60% at 10% 80%, rgba(34,211,238,0.05), transparent);
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(245,158,11,0.15), transparent),
+        radial-gradient(ellipse 60% 40% at 80% 50%, rgba(251,191,36,0.1), transparent),
+        radial-gradient(ellipse 50% 60% at 10% 80%, rgba(251,191,36,0.05), transparent);
 }
 
 .hero-grid-lines {
     position: absolute;
     inset: 0;
     background-image:
-        linear-gradient(rgba(99,102,241,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(99,102,241,0.03) 1px, transparent 1px);
+        linear-gradient(rgba(245,158,11,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(245,158,11,0.03) 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black, transparent);
     -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black, transparent);
@@ -306,7 +306,7 @@ section {
 }
 
 .hero-name {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-size: clamp(3rem, 7vw, 5.5rem);
     font-weight: 700;
     line-height: 0.95;
@@ -378,7 +378,7 @@ section {
     position: absolute;
     inset: -8px;
     border-radius: 50%;
-    border: 1px solid rgba(99,102,241,0.2);
+    border: 1px solid rgba(245,158,11,0.2);
     animation: ring-pulse 3s ease-in-out infinite;
 }
 
@@ -433,7 +433,7 @@ section {
 .btn-primary {
     background: var(--gradient);
     color: white;
-    box-shadow: 0 4px 15px rgba(99,102,241,0.3);
+    box-shadow: 0 4px 15px rgba(245,158,11,0.3);
 }
 
 .btn-primary:hover {
@@ -450,7 +450,7 @@ section {
 
 .btn-outline:hover {
     border-color: var(--accent-1);
-    background: rgba(99,102,241,0.1);
+    background: rgba(245,158,11,0.1);
     color: var(--text-primary);
 }
 
@@ -484,8 +484,8 @@ section {
 }
 
 .metric-number {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(2rem, 4vw, 3rem);
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
     background: var(--gradient);
     -webkit-background-clip: text;
@@ -551,25 +551,25 @@ section {
 }
 
 .venture-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 12px;
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
     background: var(--gradient-subtle);
     border: 1px solid var(--border);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 
 .venture-icon img {
-    max-width: 32px;
-    max-height: 32px;
+    max-width: 48px;
+    max-height: 48px;
     object-fit: contain;
 }
 
 .venture-card h3 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.25rem;
@@ -611,7 +611,7 @@ section {
     font-size: 0.75rem;
     font-weight: 600;
     color: var(--accent-3);
-    background: rgba(34,211,238,0.1);
+    background: rgba(251,191,36,0.1);
     padding: 0.25rem 0.75rem;
     border-radius: 100px;
 }
@@ -663,7 +663,7 @@ section {
 }
 
 .timeline-year {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-size: 3rem;
     font-weight: 700;
     background: var(--gradient);
@@ -803,7 +803,7 @@ section {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(ellipse 50% 50% at 50% 50%, rgba(99,102,241,0.08), transparent);
+        radial-gradient(ellipse 50% 50% at 50% 50%, rgba(245,158,11,0.08), transparent);
 }
 
 .cta-section .section-inner {
@@ -854,7 +854,7 @@ section {
 }
 
 .footer-col h4 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -919,7 +919,7 @@ section {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 60% 60% at 30% 0%, rgba(99,102,241,0.1), transparent);
+    background: radial-gradient(ellipse 60% 60% at 30% 0%, rgba(245,158,11,0.1), transparent);
 }
 
 .page-header .section-inner {
@@ -992,7 +992,7 @@ section {
 }
 
 .career-card h3 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
 }
@@ -1001,7 +1001,7 @@ section {
     font-size: 0.85rem;
     color: var(--accent-3);
     font-weight: 500;
-    background: rgba(34,211,238,0.1);
+    background: rgba(251,191,36,0.1);
     padding: 0.25rem 0.75rem;
     border-radius: 100px;
     white-space: nowrap;
@@ -1084,7 +1084,7 @@ section {
 }
 
 .edu-card h4 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Syne', sans-serif;
     font-weight: 600;
     margin-bottom: 0.25rem;
 }
@@ -1115,7 +1115,7 @@ section {
 }
 
 .blog-empty h3 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Syne', sans-serif;
     margin-bottom: 0.5rem;
 }
 
@@ -1146,9 +1146,9 @@ section {
 }
 
 .contact-info-icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
     background: var(--gradient-subtle);
     border: 1px solid var(--border);
     display: flex;
@@ -1206,7 +1206,7 @@ section {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-1);
-    box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+    box-shadow: 0 0 0 3px rgba(245,158,11,0.15);
 }
 
 .form-group textarea {
