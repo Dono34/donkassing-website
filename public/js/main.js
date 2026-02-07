@@ -136,35 +136,44 @@ document.addEventListener('DOMContentLoaded', () => {
     if (timelineWrapper && timelineTrack && typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
         gsap.registerPlugin(ScrollTrigger);
 
-        const totalScroll = timelineTrack.scrollWidth - timelineWrapper.offsetWidth;
+        function initTimeline() {
+            const totalScroll = timelineTrack.scrollWidth - window.innerWidth;
+            if (totalScroll <= 0) return;
 
-        gsap.to(timelineTrack, {
-            x: -totalScroll,
-            ease: 'none',
-            scrollTrigger: {
-                trigger: '.timeline',
-                start: 'top top',
-                end: () => '+=' + totalScroll,
-                pin: true,
-                scrub: 1,
-                invalidateOnRefresh: true
-            }
-        });
-
-        // Animate the progress line
-        const timelineLineFill = document.querySelector('.timeline-line-fill');
-        if (timelineLineFill) {
-            gsap.to(timelineLineFill, {
-                width: '100%',
+            gsap.to(timelineTrack, {
+                x: -totalScroll,
                 ease: 'none',
                 scrollTrigger: {
                     trigger: '.timeline',
                     start: 'top top',
-                    end: () => '+=' + totalScroll,
-                    scrub: 1
+                    end: () => '+=' + (totalScroll * 1.5),
+                    pin: true,
+                    scrub: 0.5,
+                    invalidateOnRefresh: true,
+                    anticipatePin: 1
                 }
             });
+
+            const timelineLineFill = document.querySelector('.timeline-line-fill');
+            if (timelineLineFill) {
+                gsap.to(timelineLineFill, {
+                    width: '100%',
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: '.timeline',
+                        start: 'top top',
+                        end: () => '+=' + (totalScroll * 1.5),
+                        scrub: 0.5
+                    }
+                });
+            }
         }
+
+        // Wait for images to load before calculating widths
+        window.addEventListener('load', () => {
+            initTimeline();
+            ScrollTrigger.refresh();
+        });
     }
 
     // --- 3D tilt on venture cards ---

@@ -646,9 +646,9 @@ section {
 }
 
 .timeline-item {
-    width: clamp(300px, 40vw, 450px);
+    width: clamp(260px, 30vw, 350px);
     flex-shrink: 0;
-    padding: 2rem;
+    padding: 1.5rem;
     position: relative;
 }
 
@@ -674,7 +674,7 @@ section {
 
 .timeline-year {
     font-family: 'Syne', sans-serif;
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: 700;
     background: var(--gradient);
     -webkit-background-clip: text;
@@ -1335,7 +1335,7 @@ section {
     }
 
     .timeline-item {
-        width: 85vw;
+        width: 75vw;
     }
 
     .footer-inner {
