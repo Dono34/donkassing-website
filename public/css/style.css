@@ -662,6 +662,16 @@ section {
     background: var(--border);
 }
 
+.timeline-logo {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.9);
+    padding: 8px;
+    margin-bottom: 1rem;
+}
+
 .timeline-year {
     font-family: 'Syne', sans-serif;
     font-size: 3rem;
